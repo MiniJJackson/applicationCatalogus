@@ -79,20 +79,22 @@ const ClothingScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#78ABA9',
     alignItems: 'center',
     justifyContent: 'center',
+    
   },
   list: {
     height: "90%",
+    margin: 10,
   },
   title: {
     fontSize: 24,
     color: "#96C6F3",
     fontWeight: "bold",
-    textTransform: "uppercase",
     marginBottom: 8,
-    textAlign: "center"
+    textAlign: "center",
+    marginTop: 20,
   }
 });
 export default ClothingScreen;

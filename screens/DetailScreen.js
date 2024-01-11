@@ -1,12 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
+import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 
-const ArticleScreen = ({ navigation }) => {
+import Details from '../components/ClothingDetail';
+
+const DetailScreen = ({ route, navigation }) => {
+  const { id } = route.params;
   return (
     <View style={styles.container}>
       <Text>ATRICLE - SCREEN</Text>
+      <Details detailId={id} />
       <Button title="back to clothing" onPress={() => navigation.navigate('Clothing')}/>
-      <StatusBar style="auto" />
     </View>
   );
 }
@@ -19,4 +22,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
-export default ArticleScreen;
+export default DetailScreen;
