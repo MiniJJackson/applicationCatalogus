@@ -69,7 +69,7 @@ const ClothingScreen = ({ navigation }) => {
 
       {/*VIEW FOR BUTTON*/}
       <View style={styles.buttons}>
-      <Button title="back to start" onPress={() => navigation.navigate('Welcome')}/>
+      <Button  color="#C6DDF2"   title="back to start" onPress={() => navigation.navigate('Welcome')}/>
       </View>
     </View>
   );
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 24,
-    color: "#96C6F3",
+    color: "#F1C8C1",
     fontWeight: "bold",
     marginBottom: 8,
     textAlign: "center",

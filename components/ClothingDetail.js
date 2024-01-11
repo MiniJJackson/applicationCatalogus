@@ -47,7 +47,10 @@ const ClothingDetail = props => {
       />
       <View style={styles.wrapper}>
         <Text style={styles.title}>{detail.title}</Text>
-        <Text style={styles.brand}>{detail.brand}</Text>
+        <View style={styles.flexBox}>
+          <Text style={styles.brand}>{detail.brand}</Text>
+          <Text style={styles.price}>	&euro; {detail.price}</Text>
+        </View>
         <Text style={styles.body}>{detail.fullText}</Text>
       </View>
     </ScrollView >
@@ -66,16 +69,30 @@ const styles = StyleSheet.create({
     fontSize: 24,
     color: "#96C6F3",
     fontWeight: "bold",
-    textTransform: "uppercase",
+    fontStyle: 'italic',
     marginBottom: 24,
   },
   brand:{
-    color: "#96C6F3",
+    color: "#3A9AA2",
     fontWeight: "bold",
     marginBottom: 4,
   },
+  flexBox:{
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 20,
+  
+  },
   body: {
     lineHeight: 24
+  },
+  price:{
+    color: "#F1C8C1",
+    fontWeight: "bold",
+    fontSize: 20,
+    marginBottom: 4,
   }
 });
 export default ClothingDetail;

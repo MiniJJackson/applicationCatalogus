@@ -9,7 +9,7 @@ const WelcomeScreen = ({ navigation }) => {
       <Text style={styles.text}>To my <Text style={styles.amazon}> AMAZON </Text>Clothing Catalog</Text>
       <Text>  </Text>
       <Text>  </Text>
-      <Button style={styles.goButton} color="#C6DDF2" title="go to catalog" onPress={() => navigation.navigate('Clothing')}/>
+      <Button  color="#C6DDF2" title="go to catalog" onPress={() => navigation.navigate('Clothing')}/>
       <StatusBar style="dark-content" />
     </View>
   );
@@ -37,11 +37,6 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     fontStyle: 'italic',
     fontSize: 28,
-  },
-  goButton:{
-    position: 'absolute',
-    bottom:0,
-    left:0,
   },
 });
 
