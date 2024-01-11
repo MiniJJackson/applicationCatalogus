@@ -47,6 +47,7 @@ const ClothingDetail = props => {
       />
       <View style={styles.wrapper}>
         <Text style={styles.title}>{detail.title}</Text>
+        <Text style={styles.brand}>{detail.brand}</Text>
         <Text style={styles.body}>{detail.fullText}</Text>
       </View>
     </ScrollView >
@@ -68,9 +69,13 @@ const styles = StyleSheet.create({
     textTransform: "uppercase",
     marginBottom: 24,
   },
+  brand:{
+    color: "#96C6F3",
+    fontWeight: "bold",
+    marginBottom: 4,
+  },
   body: {
     lineHeight: 24
-
   }
 });
 export default ClothingDetail;

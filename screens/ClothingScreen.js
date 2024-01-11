@@ -42,12 +42,6 @@ const ClothingScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>All Clothing</Text>
-
-      {/*VIEW FOR BUTTON TOP*/}
-      <View style={styles.buttons}>
-      <Button title="back to start" onPress={() => navigation.navigate('Welcome')}/>
-      </View>
-      
       {/*FLATLIST FOR LIST*/}
 
       <FlatList
@@ -72,6 +66,11 @@ const ClothingScreen = ({ navigation }) => {
           />
         }}
       />
+
+      {/*VIEW FOR BUTTON*/}
+      <View style={styles.buttons}>
+      <Button title="back to start" onPress={() => navigation.navigate('Welcome')}/>
+      </View>
     </View>
   );
 }
@@ -95,6 +94,6 @@ const styles = StyleSheet.create({
     marginBottom: 8,
     textAlign: "center",
     marginTop: 20,
-  }
+  },
 });
 export default ClothingScreen;

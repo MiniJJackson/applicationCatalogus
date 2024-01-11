@@ -12,6 +12,7 @@ const ClothingItem = props => {
           }}
         />
         <Text style={styles.title}>{props.title}</Text>
+        <Text style={styles.brand}>{props.brand}</Text>
         <Text style={styles.intro}>{props.intro}</Text>
       </View>
     </TouchableOpacity >
